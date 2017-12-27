@@ -37,7 +37,6 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/users/home' do
-    @user = User.new(params)
     erb :'/users/home'
   end
 
